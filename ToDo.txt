@@ -1,0 +1,5 @@
+[] - add logo to navbar
+[] - add mobile menu
+[] - add animations on page load
+[] - add animation to arrows on hover
+[] - add carousel to shop
