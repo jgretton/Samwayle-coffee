@@ -1,5 +1,5 @@
 [x] - add logo to navbar
-[]- when scolling to id on page, need scroll margin
+[x]- when scolling to id on page, need scroll margin
 [] - padding when shrinking screen size
 []- contact addressees not central on mobile
 []-contact section not taking up all space

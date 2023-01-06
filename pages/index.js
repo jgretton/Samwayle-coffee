@@ -69,7 +69,7 @@ export default function Home() {
 
       <main className="">
         {/* Hero */}
-        <section className="container mx-auto flex flex-row justify-between mb-36 mt-36">
+        <section className="container mx-auto flex flex-row justify-between mb-36 mt-36 px-4">
           <div className="flex flex-col md:space-y-7 items-center md:items-start m-auto md:m-0 justify-center">
             <h2 className="text-xl md:text-2xl font-Cursive">
               Drink coffee, enjoy with Samwayle
@@ -113,7 +113,7 @@ export default function Home() {
 
         {/* About us */}
         <section
-          className="container mx-auto flex flex-col lg:flex-row scroll-my-8"
+          className="container mx-auto flex flex-col lg:flex-row scroll-my-8 px-4"
           id="About"
         >
           <div className="h-[287px] bg-[#FAE9E0] w-full lg:min-w-[380px] lg:max-w-[400px] text-black relative mr-24">
@@ -151,7 +151,7 @@ export default function Home() {
         </section>
         {/* Promotion */}
         <section
-          className="container mx-auto mt-24 lg:mt-28 scroll-my-8"
+          className="container mx-auto mt-24 lg:mt-28 scroll-my-8 px-4"
           id="Promotion"
         >
           <div className="flex flex-col lg:flex-row">
@@ -168,7 +168,7 @@ export default function Home() {
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               />
             </div>
-            <div className="px-8">
+            <div className="">
               <h3 className="text-black text-4xl mt-8">Coffee of the day</h3>
               <p className="mt-8 text-lg leading-9 text-[#444A4A]">
                 Americano coffee (Italian: Caffè Americano) is an espresso
