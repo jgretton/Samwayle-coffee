@@ -77,7 +77,7 @@ export default function Home() {
             <h1 className="text-[54px] md:text-6xl mt-3 font-Jose">
               Coffee Shop
             </h1>
-            <button className="px-5 md:px-20 py-3 bg-[#2D635E] rounded-md text-white flex flex-row mt-7">
+            <button className="px-5 md:px-20 py-3 bg-[#2D635E] rounded-md text-white flex flex-row mt-7 items-center">
               Order here
               <Image
                 src={ArrowRight}
