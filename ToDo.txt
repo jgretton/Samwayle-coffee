@@ -1,8 +1,8 @@
 [x] - add logo to navbar
 [x]- when scolling to id on page, need scroll margin
-[] - padding when shrinking screen size
+[x] - padding when shrinking screen size
 []- contact addressees not central on mobile
-[]-contact section not taking up all space
+
 [] - add mobile menu
 [] - add animations on page load
 [] - add animation to arrows on hover

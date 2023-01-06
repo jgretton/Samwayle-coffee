@@ -59,7 +59,7 @@ export default function Home() {
             <Link href="#About">About us</Link>
             <Link href="#Promotion">Promotion</Link>
             <Link href="#Shop">Shop</Link>
-            <Link href="/Contact">Contacts</Link>
+            <Link href="#Contact">Contacts</Link>
             <button className="px-8 py-3 bg-[#2D635E] rounded-md text-white">
               Contact us
             </button>
@@ -130,7 +130,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex flex-col px-8">
+          <div className="flex flex-col">
             <h3 className="text-black text-4xl  mt-8 lg:mt-0">
               Coffee shop Samwayle
             </h3>
@@ -168,7 +168,7 @@ export default function Home() {
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               />
             </div>
-            <div className="">
+            <div className="flex flex-col items-start">
               <h3 className="text-black text-4xl mt-8">Coffee of the day</h3>
               <p className="mt-8 text-lg leading-9 text-[#444A4A]">
                 Americano coffee (Italian: Caffè Americano) is an espresso
@@ -178,7 +178,7 @@ export default function Home() {
                 second case, this refers not to diluted espresso, but to a drink
                 prepared through a filter system.
               </p>
-              <button className="px-5 md:px-20 py-3 bg-[#2D635E] rounded-md text-white flex flex-row mt-7">
+              <button className="px-20 py-3 bg-[#2D635E] rounded-md text-white flex flex-row mt-7 self-center">
                 Order now
               </button>
             </div>
