@@ -1,8 +1,8 @@
 [x] - add logo to navbar
 [x]- when scolling to id on page, need scroll margin
 [x] - padding when shrinking screen size
-[]- contact addressees not central on mobile
-
+[] - contact addressees not central on mobile
+[] - add social links in hero
 [] - add mobile menu
 [] - add animations on page load
 [] - add animation to arrows on hover

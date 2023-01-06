@@ -253,7 +253,7 @@ export default function Home() {
               className="object-cover rounded-md"
             />
           </div>
-          <div className="mt-8 leading-[45px] flex flex-row justify-center md:justify-start md:items-start md:w-1/2 ml-8">
+          <div className="mt-8 leading-[45px] flex flex-row justify-center md:justify-start md:items-start md:w-1/2 md:ml-8">
             <div className="mr-8 md:block hidden mt-4 ">
               <div className="w-[102px] h-[2px] bg-black"></div>
             </div>
