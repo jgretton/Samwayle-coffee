@@ -113,7 +113,7 @@ export default function Home() {
 
         {/* About us */}
         <section
-          className="container mx-auto flex flex-col lg:flex-row"
+          className="container mx-auto flex flex-col lg:flex-row scroll-my-8"
           id="About"
         >
           <div className="h-[287px] bg-[#FAE9E0] w-full lg:min-w-[380px] lg:max-w-[400px] text-black relative mr-24">
@@ -150,7 +150,10 @@ export default function Home() {
           </div>
         </section>
         {/* Promotion */}
-        <section className="container mx-auto mt-24 lg:mt-28" id="Promotion">
+        <section
+          className="container mx-auto mt-24 lg:mt-28 scroll-my-8"
+          id="Promotion"
+        >
           <div className="flex flex-col lg:flex-row">
             <div className="h-[287px] lg:min-w-[410px] bg-[#E3EBE7] w-full text-black relative lg:order-2">
               <p className="hidden lg:block absolute font-Cursive right-0 text-2xl text-black/75 -rotate-90 origin-bottom-right -top-14">
@@ -184,7 +187,7 @@ export default function Home() {
 
         {/* Shop */}
         <section
-          className="mt-24 lg:mt-16  md:bg-[#2D635E]/5 lg:flex-row w-full lg:py-12 md:py-0"
+          className="mt-24 lg:mt-16  md:bg-[#2D635E]/5 lg:flex-row w-full lg:py-12 md:py-0 scroll-my-8"
           id="Shop"
         >
           <div className="container mx-auto flex flex-row space-x-5 items-center justify-center md:justify-between ">
@@ -236,7 +239,7 @@ export default function Home() {
 
         {/* Contact */}
         <section
-          className="container mx-auto p-5 mt-24 flex flex-col md:flex-row"
+          className="container mx-auto p-5 mt-24 flex flex-col md:flex-row scroll-my-8"
           id="Contact"
         >
           <div className="h-80 w-full relative md:w-1/2">
