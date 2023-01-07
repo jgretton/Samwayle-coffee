@@ -45,8 +45,8 @@ export default function Home() {
           <nav
             className={
               active
-                ? "flex flex-col fixed h-screen inset-0 top-14 bg-white  z-50 transition-all items-center justify-evenly"
-                : "flex flex-col fixed h-screen  inset-0 -translate-x-full top-14 bg-white  z-50 transition-all items-center"
+                ? "flex flex-col fixed inset-0 top-14 bg-white  z-50 transition-all items-center justify-evenly"
+                : "flex flex-col fixed inset-0 -translate-x-full top-14 bg-white  z-50 transition-all items-center"
             }
           >
             <Link href="/" className="text-4xl">
