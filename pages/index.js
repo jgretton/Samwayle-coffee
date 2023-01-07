@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="min-w-full p-4">
+      <header className="min-w-full p-4 md:block fixed top-0 bg-white z-50">
         <div className="container mx-auto flex flex-row items-center lg:justify-between relative">
           <div
             className={
