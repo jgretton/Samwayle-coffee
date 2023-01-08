@@ -14,9 +14,19 @@ import Logo from "../public/Logo.svg";
 import Facebook from "../public/Facebook.svg";
 import Twitter from "../public/Twitter.svg";
 import Instagram from "../public/Instagram.svg";
+import Carousel from "../components/Carousel";
 
 export default function Home() {
   const [active, setActive] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const nextIndex = () => {
+    setActiveIndex(activeIndex + 1);
+  };
+
+  const prevIndex = () => {
+    setActiveIndex(activeIndex - 1);
+  };
   return (
     <div
       className={active ? "font-Jose h-screen overflow-y-hidden" : "font-Jose"}
@@ -28,7 +38,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="min-w-full p-4 md:block fixed top-0 bg-white z-50">
+      <header className="min-w-full p-4 lg:relative fixed top-0 bg-white z-50">
         <div className="container mx-auto flex flex-row items-center lg:justify-between relative">
           <div
             className={
@@ -38,9 +48,9 @@ export default function Home() {
             }
             onClick={() => setActive(!active)}
           >
-            <div class="w-8 h-0.5 bg-gray-600"></div>
-            <div class="w-8 h-0.5 bg-gray-600"></div>
-            <div class="w-8 h-0.5 bg-gray-600"></div>
+            <div className="w-8 h-0.5 bg-gray-600"></div>
+            <div className="w-8 h-0.5 bg-gray-600"></div>
+            <div className="w-8 h-0.5 bg-gray-600"></div>
           </div>
           <nav
             className={
@@ -111,13 +121,13 @@ export default function Home() {
             <div
               className={
                 active
-                  ? "lg:hidden absolute right-4 bottom-1/2 translate-y-1/2 space-y-2 cursor-pointer"
+                  ? "lg:hidden absolute block right-4 bottom-1/2 translate-y-1/2 space-y-2 cursor-pointer"
                   : "hidden"
               }
               onClick={() => setActive(!active)}
             >
-              <div class="w-8 h-0.5 bg-gray-600 rotate-45 origin-bottom translate-y-[9px]"></div>
-              <div class="w-8 h-0.5 bg-gray-600 -rotate-45 bottom-4"></div>
+              <div className="w-8 h-0.5 bg-gray-600 rotate-45 origin-bottom translate-y-[9px]"></div>
+              <div className="w-8 h-0.5 bg-gray-600 -rotate-45 bottom-4"></div>
             </div>
           </div>
 
@@ -135,7 +145,7 @@ export default function Home() {
 
       <main className="">
         {/* Hero */}
-        <section className="container mx-auto flex flex-row justify-between mb-36 mt-36 px-4">
+        <section className="container mx-auto flex flex-row justify-between mb-36 mt-36 pl-4">
           <div className="flex flex-col md:space-y-7 items-center md:items-start m-auto md:m-0 justify-center">
             <h2 className="text-xl md:text-2xl font-Cursive">
               Drink coffee, enjoy with Samwayle
@@ -155,12 +165,13 @@ export default function Home() {
             </button>
           </div>
           <div className="hidden md:flex md:flex-row relative">
-            <button className="h-[157px] w-[159px] bg-[#E3EBE7]/40 lg:flex md:hidden justify-center absolute bottom-0 right-full">
+            <button className="h-[157px] w-[159px] bg-[#E3EBE7]/40 lg:flex md:hidden justify-center items-center absolute bottom-0 right-full group">
               <Image
                 src={ArrowRight}
                 height={10}
                 width={30}
-                alt="Arrow pointing right"
+                alt="Arrow pointing right "
+                className="group-hover:translate-x-2 transition-transform"
               />
             </button>
             <div className="h-[466px] w-[410px] bg-[#E3EBE7] relative">
@@ -173,17 +184,16 @@ export default function Home() {
                 className="absolute -bottom-12 left-1/2 transform -translate-x-1/2"
               />
             </div>
-            <div className=""></div>
           </div>
         </section>
 
         {/* About us */}
         <section
-          className="container mx-auto flex flex-col lg:flex-row md:scroll-my-8 scroll-my-28 px-4"
+          className="container mx-auto flex flex-col lg:flex-row md:scroll-my-8 scroll-my-28 px-4 group"
           id="About"
         >
           <div className="h-[287px] bg-[#FAE9E0] w-full lg:min-w-[380px] lg:max-w-[400px] text-black relative mr-24">
-            <p className="hidden absolute lg:block font-Cursive text-2xl text-black/75 -rotate-90 origin-top-left left-0 top-20">
+            <p className="hidden absolute lg:block font-Cursive text-2xl text-black/75 -rotate-90 origin-top-left left-0 top-20 group-hover:text-red-700">
               About us
             </p>
             <Image
@@ -256,6 +266,23 @@ export default function Home() {
           className="mt-24 lg:mt-16  md:bg-[#2D635E]/5 lg:flex-row w-full lg:py-12 md:py-0 md:scroll-my-8 scroll-my-28"
           id="Shop"
         >
+          {/* <div className="flex flex-row container mx-auto">
+            <button className="block ">
+              <Image
+                src={ArrowLeftNoTail}
+                alt="Button to move slider left"
+                onClick={prevIndex}
+              />
+            </button>
+            <Carousel activeIndex={activeIndex} />
+            <button className="block">
+              <Image
+                src={ArrowRightNoTail}
+                alt="Button to move slider right"
+                onClick={nextIndex}
+              />
+            </button>
+          </div> */}
           <div className="container mx-auto flex flex-row space-x-5 items-center justify-center md:justify-between ">
             <button className="md:block hidden">
               <Image src={ArrowLeftNoTail} alt="Button to move slider left" />
