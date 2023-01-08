@@ -18,15 +18,6 @@ import Carousel from "../components/Carousel";
 
 export default function Home() {
   const [active, setActive] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const nextIndex = () => {
-    setActiveIndex(activeIndex + 1);
-  };
-
-  const prevIndex = () => {
-    setActiveIndex(activeIndex - 1);
-  };
   return (
     <div
       className={active ? "font-Jose h-screen overflow-y-hidden" : "font-Jose"}
@@ -267,27 +258,13 @@ export default function Home() {
           id="Shop"
         >
           {/* <div className="flex flex-row container mx-auto">
-            <button className="block ">
-              <Image
-                src={ArrowLeftNoTail}
-                alt="Button to move slider left"
-                onClick={prevIndex}
-              />
-            </button>
-            <Carousel activeIndex={activeIndex} />
-            <button className="block">
-              <Image
-                src={ArrowRightNoTail}
-                alt="Button to move slider right"
-                onClick={nextIndex}
-              />
-            </button>
+            <Carousel />
           </div> */}
-          <div className="container mx-auto flex flex-row space-x-5 items-center justify-center md:justify-between ">
-            <button className="md:block hidden">
+          <div className="container mx-auto flex flex-row space-x-5 items-center justify-center md:justify-between  ">
+            {/* <button className="md:block hidden">
               <Image src={ArrowLeftNoTail} alt="Button to move slider left" />
-            </button>
-            <div className="flex flex-col space-y-8 md:space-y-0 md:space-x-8 md:flex-row justify-between items-center">
+            </button> */}
+            <div className="flex flex-col space-y-8 md:space-y-0 md:space-x-8 md:flex-row items-center mx-auto">
               <div className="flex flex-col justify-between text-center max-w-xs min-h-[458px] p-10 shop-shadow rounded-3xl bg-white min-w-min">
                 <p className="mt-8 text-3xl">Espresso</p>
                 <p className="mt-8 text-lg leading-9 text-[#444A4A]">
@@ -324,9 +301,9 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <button className="md:block hidden">
+            {/* <button className="md:block hidden">
               <Image src={ArrowRightNoTail} alt="Button to move slider right" />
-            </button>
+            </button> */}
           </div>
         </section>
 
