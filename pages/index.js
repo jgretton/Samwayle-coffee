@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import ArrowRight from "../public/Arrow-right.svg";
+import ArrowRightWhite from "../public/Arrow-right-white.svg";
 import ArrowRightNoTail from "../public/Arrow-right-no-tail.svg";
 import ArrowLeftNoTail from "../public/Arrow-left-no-tail.svg";
 import Coffee from "../public/Coffee.svg";
@@ -147,7 +148,7 @@ export default function Home() {
             <button className="px-5 md:px-20 py-3 bg-[#2D635E] rounded-md text-white flex flex-row mt-7 items-center">
               Order here
               <Image
-                src={ArrowRight}
+                src={ArrowRightWhite}
                 height={10}
                 width={30}
                 alt="Arrow pointing right"
